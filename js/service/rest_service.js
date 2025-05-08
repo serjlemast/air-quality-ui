@@ -3,7 +3,8 @@
 app.factory('restService', ['$http', '$location', function ($http) {
     let Response = {};
 
-    let apiPath = '/v1/api';
+    let api = window.__env.API_BASE_URL;
+    let apiPath = api + '/v1/api';
 
     Response.get = function (url) {
         return $http.get(apiPath.concat(url));
