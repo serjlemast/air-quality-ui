@@ -1,3 +1,3 @@
 window.__env = {
-    API_BASE_URL: "http://localhost:8080"
+    API_BASE_URL: "https://air-quality-svc.onrender.com"
 };
