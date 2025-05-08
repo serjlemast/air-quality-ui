@@ -1,8 +1,9 @@
 'use strict';
 
 app.factory('websocketService', function ($rootScope, $location) {
+    let api = window.__env.API_WS_URL;
     let wsProtocol = $location.protocol() === "https" ? "wss://" : "ws://";
-    let newWsUrl = wsProtocol + $location.host() + ":" + $location.port() + "/sensor-data";
+    let newWsUrl = wsProtocol + api + ":" + $location.port() + "/sensor-data";
     let service = {
         data: {}, connect: function () {
             let socket = new WebSocket(newWsUrl);
