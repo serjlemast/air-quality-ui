@@ -18,7 +18,7 @@ app.component('statistics', {
         $scope.humidityColors = ["rgb(95,143,164)"];
 
         restService.get('/statistics').then(function (response) {
-            $scope.sensors = response.data.map(sensor => {
+            $scope.sensors = response.data.sensors.map(sensor => {
                 let tempData = sensor.data.find(d => d.key === "temperature_celsius");
                 let humidityData = sensor.data.find(d => d.key === "humidity");
                 let tvocData = sensor.data.find(d => d.key === "tvoc");
