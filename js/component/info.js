@@ -8,7 +8,8 @@ app.component('info', {
       <div class="col-12">
          <div class="card text-center">
             <div class="card-header">
-               <h5>IoT system</h5>
+               <br>
+               <p>IoT system</p>
                <br>
             </div>
             <div class="card-body">

@@ -65,6 +65,7 @@ app.component('monitor', {
       <div class="col-12">
          <div class="card text-center">
             <div class="card-header">
+               <br>
                <p>Environmental Monitoring: Temperature, Humidity & Air Quality Sensors</p>
                <svg class="blink_1_second bd-placeholder-img rounded me-2" width="10" height="10" 
                   xmlns="http://www.w3.org/2000/svg" 
