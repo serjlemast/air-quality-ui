@@ -10,7 +10,6 @@ app.component('info', {
             <div class="card-header">
                <br>
                <p>IoT system</p>
-               <br>
             </div>
             <div class="card-body">
                <br>
